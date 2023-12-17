@@ -683,3 +683,7 @@ div#txt {
   right: 20px;
   top: 1.5%;
 }
+
+.weather-type{
+  color: white;
+}

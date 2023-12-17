@@ -67,9 +67,9 @@ class Weather extends React.Component {
         })
         .catch((err) => {
           //If user denied location service then standard location weather will le shown on basis of latitude & latitude.
-          this.getWeather(23.04, 72.62);
+          this.getWeather(23.0333, 72.6167);
           alert(
-            "You have disabled location service. Allow 'This APP' to access your location. Your current location will be used for calculating Real time weather."
+            "You have disabled location service. Allow 'Weather APP' to access your location. Your current location will be used for calculating Real time weather."
           );
         });
     } else {
@@ -115,9 +115,6 @@ class Weather extends React.Component {
       humidity: data.main.humidity,
       main: data.weather[0].main,
       country: data.sys.country,
-      // sunrise: this.getTimeFromUnixTimeStamp(data.sys.sunrise),
-
-      // sunset: this.getTimeFromUnixTimeStamp(data.sys.sunset),
     });
     switch (this.state.main) {
       case "Haze":

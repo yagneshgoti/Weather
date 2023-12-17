@@ -40,7 +40,7 @@ function Forcast(props) {
   };
 
   useEffect(() => {
-    search("Delhi");
+    search("Ahmedabad");
   }, []);
 
   return (
@@ -54,7 +54,7 @@ function Forcast(props) {
         />
       </div>
       <div className="today-weather">
-        <h3>{props.weather}</h3>
+        <h3 className="weather-type">{props.weather}</h3>
         <div className="search-box">
           <input
             type="text"
